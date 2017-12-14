@@ -1,1 +1,3 @@
-this is test file
+this is test file.
+
+This file is edited with new content.
