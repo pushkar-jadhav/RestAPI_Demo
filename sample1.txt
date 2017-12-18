@@ -1,5 +1,0 @@
-this is test file.
-
-This file is edited with new content.
-
-I am editing the content to view the changes.
