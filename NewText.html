@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<stl_head>
+    <title><tag:domain_name /></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=<tag:charset />">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <tag:reset_css />
+    <style type="text/css">
+        #wrapper{position: relative; width: 1px; min-width: 100%; *width: 100%; background: #fff; 
+            font-family: verdana, arial, sans-serif; overflow: hidden; height: 250px;}
+        .header{height: 15px; *height: 17px; line-height: 12px; font-size: 14px; color: #393939;}
+        ul li:first-child{margin-top: 0;}
+        ul li{position: relative; height: 50px; overflow: hidden; border: 1px solid #ddd; border-left: 2px solid #418ccc; margin-top: 9px; *margin-top: 8px;}
+        li a{padding: 0 44px 0 34px; position: relative; overflow: hidden; font-size: 14px; line-height: 18px; color: #393939; word-wrap: break-word; background-image: url('about:blank'); display: block; font-weight: bold}
+        .number{position: absolute; left: 10px; color: #393939; line-height: 50px; font-size: 14px; font-weight: bold;}
+        .arrow{position: absolute; top: 50%; right: 10px; background: no-repeat; width: 8px; height: 13px; margin-top: -6px; background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAANCAYAAACUwi84AAAAi0lEQVQYlXXOMQ4BURQF0DMTmyAhaKxhOmxDgcKyKLAOFHaBDMY+aP5Pfn7Ga15xT25uUVXVEFus0MiuxA5zXNBvA0s8MA5okIMG0wSdU1SG/wnonjdFENEMN4wiSkFEC3wD2uegiwMKvLFOQS8MnOAVNtVlEp6ScIY6jvwbQgfHrPaZjiqxwbUthB+MUSLUFym6KwAAAABJRU5ErkJggg==') no-repeat}
+        ul li:hover a{color: #08008d;}
+        .left-kw{width: auto; margin-right: 310px; overflow: hidden;}
+        .right-img{width: 300px; height: 250px; position: absolute; right: 0; top: 0; overflow: hidden;}
+        #wrapper{visibility: hidden;}
+        p.line1{height: 20px; overflow: hidden; margin: 16px 0 15px;}
+        p.line2{height: 37px; overflow: hidden; margin: 7px 0;}
+        @media only screen and (max-width: 599px){
+            .right-img{display: none;}
+            .left-kw{margin-right: 0;}
+        }
+    </style>
+</stl_head>
+<stl_body>
+    <div id="wrapper">
+        <div class="header">See Also</div>
+            <div class="left-kw">
+                <ul>
+                    <li><span class="number">1.</span><span class="arrow"></span><domain_keyword:1 /></li>
+                    <li><span class="number">2.</span><span class="arrow"></span><domain_keyword:2 /></li>
+                    <li><span class="number">3.</span><span class="arrow"></span><domain_keyword:3 /></li>
+                    <li><span class="number">4.</span><span class="arrow"></span><domain_keyword:4 /></li>
+                </ul>
+            </div>
+            <div class="right-img">
+                  <!--
+                  ~ Copyright (C) 2014 Media.net Advertising FZ-LLC All Rights Reserved
+                  -->
+                <script id="mNCC" language="javascript">
+                    medianet_width = "300";
+                    medianet_height = "250";
+                    medianet_crid = "267184018";
+                    medianet_versionId = "3111299"; 
+                  </script>
+                <script src="//contextual.media.net/nmedianet.js?cid=8CUPQ48I2"></script>
+            </div>
+    </div>
+    <script type="text/javascript">
+    function formatViewAfterLoad(){
+                WrapAnchorText();
+            }
+            function WrapAnchorText(){
+              try{
+                var listingParent = document.getElementById("wrapper").getElementsByTagName("li");
+                for(var i=0;i<listingParent.length;i++){
+                  var currentinner = listingParent[i].getElementsByTagName("a")[0].innerHTML;
+                  var aHeight=listingParent[i].getElementsByTagName("a")[0].offsetHeight; // To get keyword height
+                  if (aHeight <=24){             
+                      var newinner = "<p class='line1'>"+currentinner+"</p>";
+                      listingParent[i].getElementsByTagName("a")[0].innerHTML = newinner;         
+                  }
+                 else{             
+                      var newinner = "<p class='line2'>"+currentinner+"</p>";
+                      listingParent[i].getElementsByTagName("a")[0].innerHTML = newinner;
+                  }         
+                }
+              }catch(err){
+                if(typeof console != "undefined"){
+                  console.log("Error detecting text: "+err);
+                }
+              } finally{
+                document.getElementById("wrapper").style.visibility = "visible";
+              } 
+            }
+</script>
+</stl_body>
+</html>
